@@ -10,6 +10,7 @@ import (
 
 	"github.com/TRON-US/go-btfs/core"
 	"github.com/TRON-US/go-btfs/core/commands/cmdenv"
+	offline "github.com/TRON-US/go-btfs/core/commands/offline/upload"
 	"github.com/TRON-US/go-btfs/core/commands/storage"
 	"github.com/TRON-US/go-btfs/core/commands/store/upload"
 	"github.com/TRON-US/go-btfs/core/corehttp/remote"
@@ -116,7 +117,7 @@ Use status command to check for completion:
 		"recvcontract":      upload.StorageUploadRecvContractCmd,
 		"status":            upload.StorageUploadStatusCmd,
 		"repair":            storageUploadRepairCmd,
-		"offline":           storageUploadOfflineCmd,
+		"offline":           offline.StorageUploadOfflineCmd,
 		"getcontractbatch":  storageUploadGetContractBatchCmd,
 		"signcontractbatch": storageUploadSignContractBatchCmd,
 		"getunsigned":       storageUploadGetUnsignedCmd,

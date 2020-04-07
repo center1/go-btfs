@@ -2,14 +2,13 @@ package commands
 
 import (
 	"errors"
-	"github.com/TRON-US/go-btfs/core/commands/store"
-	"github.com/TRON-US/go-btfs/core/commands/store/challenge"
-	"github.com/TRON-US/go-btfs/core/commands/store/upload"
-
 	"github.com/TRON-US/go-btfs/core/commands/cmdenv"
 	dag "github.com/TRON-US/go-btfs/core/commands/dag"
 	"github.com/TRON-US/go-btfs/core/commands/name"
 	ocmd "github.com/TRON-US/go-btfs/core/commands/object"
+	"github.com/TRON-US/go-btfs/core/commands/store"
+	"github.com/TRON-US/go-btfs/core/commands/store/challenge"
+	"github.com/TRON-US/go-btfs/core/commands/store/upload"
 	"github.com/TRON-US/go-btfs/core/commands/unixfs"
 
 	cmds "github.com/TRON-US/go-btfs-cmds"
